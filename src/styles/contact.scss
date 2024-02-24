@@ -1,0 +1,317 @@
+.contact {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact:after {
+  content: "";
+  height: 700px;
+  width: 700px;
+  background: var(--color-3);
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  right: -460px;
+  z-index: -10;
+  animation: contactAnim 25s alternate infinite;
+}
+
+@media screen and (max-width: 840px) {
+  .contact:after {
+    height: 400px;
+    width: 400px;
+    top: 520px;
+    right: -140px;
+  }
+}
+
+@media screen and ( max-width: 752px) {
+  .contact:after {
+    display: none;
+  }
+
+  .content{
+    margin-bottom: 2rem;
+  }
+
+  iframe{
+    width: 280px;
+    height: 400px;
+  }
+  .title-iframe{
+    padding-top: 6rem;
+  }
+
+  .contact-infos p{
+    font-size: 1.4rem!important;
+    margin: auto;
+    }
+}
+
+@keyframes contactAnim {
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.form-container {
+  margin: 7% 0 0 24%;
+  max-width: 50%;
+  position: relative;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 740px) {
+  .form-container {
+    margin: 2rem 0 0 30%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .form-container {
+    margin-left: 2rem;
+  }
+}
+
+.form-container h2 {
+  margin-bottom: 50px;
+}
+
+.form-container h2:after {
+  content: "";
+  height: 70px;
+  width: 70px;
+  border: 1px var(--color2) solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -22px;
+  left: 133px;
+  z-index: -1;
+}
+
+.form-content {
+  display: grid;
+}
+
+.form-content input,
+.form-content textarea {
+  background: none;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid var(--color-2);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-content input,
+  .form-content textarea {
+    font-size: 1.5rem;
+  }
+}
+
+.form-content input {
+  padding: 10px 6px;
+  margin-bottom: 30px;
+}
+
+.form-content textarea {
+  resize: none;
+  padding: 6px 0;
+  height: 70px;
+}
+
+@media screen and (max-width: 540px) {
+  .form-content textarea {
+    width: 75%;
+    padding: 12px 0;
+  }
+}
+
+.form-content input.button {
+  background: var(--color-3);
+  height: 55px;
+  width: 75%;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+input[type=text], input[type=email]{
+  width: 75%;
+}
+
+.formMessage p {
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+ .success {
+  background: rgb(139, 248, 139);
+}
+
+ .error {
+  background: rgb(246, 147, 147);
+}
+
+.contact-infos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: repeat(4, 23%) 12%;
+  height: 70%;
+  width: 30%;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 740px) {
+  .contact-infos {
+    height: 200px;
+    width: 100%;
+    max-width: 100%;    
+    position: relative;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .contact-infos {
+    grid-template-rows: repeat(3, 60px);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "b b b c c c"
+      "d d d d d d"
+      "e e e e f f";
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .contact-infos {
+    width: 35%;
+    height: 83%;
+  }
+
+}
+
+.contact-infos h4 {
+  color: var(--color4);
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-infos h4 {
+    font-size: 1.8rem;
+  }
+}
+
+.contact-infos p {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-infos p {
+    font-size: 1.5rem;
+  }
+}
+
+
+.contact-infos .email .content p,
+.contact-infos .phone .content p {
+  transition: 0.25s;
+}
+
+.contact-infos .email .content p:hover,
+.contact-infos .phone .content p:hover {
+  transform: translateX(5px);
+}
+
+.contact-infos .address {
+  position: relative;
+
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
+}
+
+.contact-infos .address .content {
+  position: absolute;
+  right: 10px;
+}
+
+.contact-infos .phone {
+  position: relative;
+
+  @media screen and (max-width: 540px) {
+    text-align: center;
+    font-size: 0.8rem;
+    grid-area: b;
+  }
+}
+
+.contact-infos .phone .content {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 540px) {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    transform: translateX(0);
+  }
+}
+
+.contact-infos .email {
+  @media screen and (max-width: 540px) {
+    grid-area: c;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+.contact-infos .social-network {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 740px) {
+    width: 50%;
+    grid-area: d;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+.contact-infos .social-network .content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-infos .credits {
+  text-align: center;
+
+  @media screen and (max-width: 740px) {
+    transform: translateY(20px);
+    font-size: 0.7rem;
+    margin-right: 1rem;
+    grid-area: f;
+  }
+
+  .contact-infos .credits p {
+    font-size: 0.9rem;
+  }
+}

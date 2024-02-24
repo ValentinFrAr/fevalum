@@ -1,0 +1,19 @@
+:root {
+  --color-1: #b8cbd0;
+  --color-2: #7a90a4;
+  --color-3: #709ca7;
+  --color-4: #137c8b;
+  --color-5: #344d59;
+}
+
+
+
+body{
+  background: var(--color-1);
+  font-family: 'Playfair Display', sans-serif;
+  min-width: 100%;;
+  overflow-x: hidden!important;
+  min-height: 100vh;
+}
+
+

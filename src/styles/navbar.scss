@@ -1,0 +1,92 @@
+.nav-logo{
+  position: relative;
+}
+
+.nav-title{
+  font-size: 5.5rem;
+  color: var(--color-3);
+  background: linear-gradient(to right, var(--color-4) 0%, var(--color-3) 45%, var(--color-4) 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  cursor: default;
+}
+
+.nav-title::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-3);
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%)
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.navbar-nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* Supprime la marge interne par défaut des ul */
+  list-style: none; /* Supprime les puces de la liste */
+  margin: 2rem 0;
+}
+
+.nav-item {
+  margin: 0 5px; /* Espace entre les éléments de la liste */
+}
+
+.nav-link{
+  font-size: 1.4rem;
+}
+
+.nav-active {
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: var(--color-4); /* Remplacez cela par votre couleur préférée */
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: anim 0.3s ease forwards;
+  animation: anim 0.6s ease forwards;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%)
+}
+
+@-webkit-keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 564px) {
+   .nav-title{
+    font-size: 4rem;
+   }
+}
