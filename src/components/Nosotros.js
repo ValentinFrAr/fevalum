@@ -10,11 +10,11 @@ const Nosotros = () => {
       </div>
       <div className="desc-nosotros pt-4">
         <p className="fw-bold text-nosotros">
-          <span className="span-fev">FEVALUM</span>, empresa con más de dos
-          décadas de experiencia en el sector de la carpintería de aluminio, se
-          distingue por su compromiso inquebrantable con la excelencia en la
-          fabricación y colocación de productos de la más alta calidad. Nuestra
-          dedicación a la perfección técnica y estética ha sido el pilar
+          <span className="span-fev">FEVALUM</span>, empresa con dos décadas de
+          experiencia en el sector de la carpintería de aluminio, se distingue
+          por su compromiso inquebrantable con la excelencia en la fabricación
+          de productos de la más alta calidad. Nuestra dedicación a la
+          perfección técnica y al cuidado de los detalles ha sido el pilar
           fundamental de nuestro éxito continuo.
         </p>
       </div>

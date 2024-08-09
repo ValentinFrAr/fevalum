@@ -42,3 +42,7 @@
 .content-buttons div{
   margin: 1.1rem;
 }
+
+@media screen and(min-width: 1024px) {
+  
+}

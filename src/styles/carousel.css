@@ -13,6 +13,12 @@
   height: 20rem;
 }
 
+.carousel-pub{
+  align-items: center;
+  display: flex;
+  background: linear-gradient(45deg, var(--color-5), var(--color-2), var(--color-3), var(--color-5));
+}
+
 .second-img-carousel{
   display: none;
 }
@@ -22,26 +28,49 @@
   font-size: 2.3rem;
 }
 
-.span-pub{
-  color: var(--color-5);
-  font-size: 1.6rem;
-} 
+.fevalum-pub span{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.img-carousel-pub{
+  height: 20rem;
+  margin: auto;
+  text-align: center;
+}
+
+
 
 .slogan{
   font-size: 1.3rem;
-  color: var(--color-1);
+  color: #fff;
 }
 
 @media  screen and (min-width: 768px) {
  .fevalum-pub{
   font-size: 3rem;
+  padding: 10px;
  }
 
- .carousel-text{
-  position: absolute;
-  top: 0;
-  left: -3rem;
+ .fevalum-pub, .img-carousel-pub, .second-img-carousel{
+  width: 33.33%;
  }
+
+.img-carousel-pub{
+  height: 20rem;
+}
+
+ .carousel-pub{
+  display: flex;
+  justify-content: space-between;
+  height: 20rem;
+ }
+
+ .slogan{
+  font-size: 2.6rem;
+  padding: 10px;
+ }
+
 }
 
 @media  screen and (min-width: 1200px) {
@@ -54,18 +83,18 @@
     height: 25rem;
   }
 
+  .img-carousel-pub{
+    height: 25rem;
+  }
+
+  .carousel-pub{
+    height: 25rem;
+  }
+
   .fevalum-pub{
-    color: var(--color-4);
+    color: var(--color-1);
     font-size: 4.5rem;
   }
-  
-  .span-pub{
-    color: var(--color-5);
-    font-size: 2.5rem;
-  } 
-  
-  .slogan{
-    font-size: 2.1rem;
-    color: var(--color-1);
-  }
+
+
 }

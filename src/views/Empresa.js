@@ -8,11 +8,11 @@ const Empresa = () => {
         <h1>FEVALUM - Compromiso y Reglas</h1>
 
         <p>
-          FEVALUM, empresa líder con más de dos décadas de experiencia en el
-          sector de la carpintería de aluminio, se distingue por su compromiso
-          inquebrantable con la excelencia en la fabricación y colocación de
-          productos de la más alta calidad. Nuestra dedicación a la perfección
-          técnica y estética ha sido el pilar fundamental de nuestro éxito
+          FEVALUM, empresa líder con dos décadas de experiencia en el sector de
+          la carpintería de aluminio, se distingue por su compromiso
+          inquebrantable con la excelencia en la fabricación de productos de la
+          más alta calidad. Nuestra dedicación a la perfección técnica y al
+          cuidado de los detalles ha sido el pilar fundamental de nuestro éxito
           continuo.
         </p>
 
@@ -35,9 +35,10 @@ const Empresa = () => {
         <h2>Reglas de la Empresa:</h2>
         <ul>
           <li>
-            Una vez cerrado el presupuesto, se requiere el pago del 100% o 70%
-            inicial y 30% restante dentro de un plazo de 20 días; dicho
-            porcentaje puede ajustarse según la tasa de inflación.
+            Una vez cerrado el presupuesto, se requiere el pago del 100% para
+            cancelar el precio o 70% inicial en forma de seña y el 30% restante
+            será contra entrega; pudiendo ajustarse dicho porcentaje (30%) según
+            la tasa de inflación.
           </li>
           <li>
             Cualquier modificación en las medidas, después de la confirmación
@@ -47,9 +48,9 @@ const Empresa = () => {
           </li>
           <li>
             La finalización de cualquier trabajo conlleva la obligación de
-            retirarlo en un plazo de 20 días por razones logísticas; de lo
-            contrario, nos reservamos el derecho de aplicar una penalización del
-            1% diario sobre el total.
+            retirarlo en el plazo acordado previamente con el cliente; de lo
+            contrario, nos reservamos el derecho de aplicar el 1% diario sobre
+            el total del presupuesto por costo de almacenaje.
           </li>
         </ul>
 

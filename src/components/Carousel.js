@@ -23,12 +23,12 @@ const Carousel = () => {
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
-        <button
+        {/* <button
           type="button"
           data-bs-target="#carouselExampleDark"
           data-bs-slide-to="2"
           aria-label="Slide 3"
-        ></button>
+        ></button> */}
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active" data-bs-interval="5000">
@@ -38,45 +38,37 @@ const Carousel = () => {
             className="d-block w-100 img-carousel"
           />
         </div>
-        <div className="carousel-item" data-bs-interval="5000">
-          {/* <div className="carousel-caption d-md-block carousel-text">
-            <h5>
-              <span className="fevalum-pub"> ¡Ofertas ventanas 120x100! </span>{" "}
-              <br />{" "}
-            </h5>
-            <p className="slogan">
-              No encontrarás mejor precio, ¡Últimas disponibles!
-            </p>
-          </div> */}
-          <div className="d-flex" style={{ background: "var(--color-5)" }}>
-            <h5>
-              <span className="fevalum-pub"> ¡Oferta! Ventanas 120x100! </span>{" "}
-              <br />{" "}
-            </h5>
+        <div className="carousel-item" data-bs-interval="50000">
+          <div className="d-flex carousel-pub">
+            <h4 className="fevalum-pub">
+              <span>¡Oferta!</span> <br /> Ventanas 120x100
+            </h4>
 
             <img
               src="https://i.ibb.co/sC0HbcQ/rsz-herrero-ok.jpg"
               alt="ventana-120x100"
-              className="d-block w-100 img-carousel"
+              className=" img-carousel-pub"
               style={{ objectFit: "contain", objectPosition: "center" }}
             />
-            <p className="slogan">Últimas disponibles ¡No te las pierdas!</p>
+            <p className="slogan">
+              Últimas <br /> disponibles <br /> ¡No te las pierdas!
+            </p>
           </div>
         </div>
-        <div className="carousel-item">
+        {/* <div className="carousel-item">
           <img
             src="https://imgs.search.brave.com/T28clhWt_E-XYqhnh6IjSfAoQqptyQZHmdBK-tZXozQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuay1saW5lLmZy/L3B1YmxpYy9zdHls/ZXMvaHBfaW5zcGly/YXRpb25fZHJvaXRl/X2Rlc2svcHVibGlj/LzIwMjEtMTEvZmVu/ZXRyZS1maXhlLXBl/dGl0cy1ib2lzLWFs/dW1pbml1bS1rLWxp/bmUuanBnP1ZlcnNp/b25JZD1jVkg3eHlV/SXdYRXJhTG5YbU1M/bEFteWJQa0lFRmQw/RyZpdG9rPUZ4dlFZ/VU52"
             className="d-block w-100 img-carousel"
             alt=""
           />
-          {/* <div className="carousel-caption  d-md-block carousel-text">
+          <div className="carousel-caption  d-md-block carousel-text">
             <h5>
               <span className="fevalum-pub">FEVALUM </span> <br />{" "}
               <span className="span-pub">Carpintería De Aluminio </span>
             </h5>
             <p className="slogan">¡Tu Visión, Nuestro Trabajo, Tu Realidad!</p>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
       </div>
       <button
         className="carousel-control-prev"
