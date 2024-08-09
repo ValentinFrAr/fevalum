@@ -12,10 +12,13 @@ export const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_vxli3h9",
-        "template_cjq8lf9",
+        // "service_vxli3h9", (service google Valentin)
+        "service_wu2ur4j",
+        // "template_cjq8lf9",
+        "template_lar5rp5",
         form.current,
-        "gu1HnNavQ_Uc5twi0"
+        // "gu1HnNavQ_Uc5twi0"
+        "nCTiPdaair7Fozkww"
       )
       .then(
         (result) => {
@@ -30,7 +33,7 @@ export const ContactForm = () => {
         (error) => {
           console.log(error.text);
           formMessage.innerHTML =
-            '<p class="error">Error! ¡El mensaje no se mandó, intenta de nuevo!</p>';
+            '<p className="error">Error! ¡El mensaje no se mandó, intenta de nuevo!</p>';
           setTimeout(() => {
             formMessage.innerHTML = "";
           }, 2500);

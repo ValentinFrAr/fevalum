@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="footer-right">
           <p className="footer-company-about">
             <span>Horario de atención: </span>
-            Lunes a Viernes : 8:00 - 18:00
+            Lunes a Viernes : 8:00 - 16:00
           </p>
 
           <div className="footer-icons">

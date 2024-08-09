@@ -46,7 +46,7 @@ const Contact = () => {
             <div className="email pt-5 me-5">
               <div className="content">
                 <h4>Correo electrónico</h4>
-                <CopyableText text="fevalum.quilmes@gmail.com" />
+                <CopyableText text="fevalumcarpinteria@gmail.com" />
               </div>
             </div>
           </div>

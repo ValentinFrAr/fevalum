@@ -5,6 +5,7 @@
   -moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
   border-radius: 6px;
+  position: relative;
 }
 
 .img-carousel{
@@ -17,7 +18,7 @@
 }
 
 .fevalum-pub{
-  color: var(--color-4);
+  color: var(--color-1);
   font-size: 2.3rem;
 }
 
@@ -29,4 +30,42 @@
 .slogan{
   font-size: 1.3rem;
   color: var(--color-1);
+}
+
+@media  screen and (min-width: 768px) {
+ .fevalum-pub{
+  font-size: 3rem;
+ }
+
+ .carousel-text{
+  position: absolute;
+  top: 0;
+  left: -3rem;
+ }
+}
+
+@media  screen and (min-width: 1200px) {
+  .main-carousel{
+    width: 75%;
+  }
+  
+  .img-carousel{
+    width: 75%;
+    height: 25rem;
+  }
+
+  .fevalum-pub{
+    color: var(--color-4);
+    font-size: 4.5rem;
+  }
+  
+  .span-pub{
+    color: var(--color-5);
+    font-size: 2.5rem;
+  } 
+  
+  .slogan{
+    font-size: 2.1rem;
+    color: var(--color-1);
+  }
 }

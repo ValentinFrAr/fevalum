@@ -1,21 +1,19 @@
 import React, { useState } from "react";
-import Filter from "../components/Filter.js";
 import PhotoGallery from "../components/PhotoGallery";
 import Footer from "../components/Footer";
+import ButtonsFilter from "../components/ButtonsFilter";
 
 const Gallery = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [rangeValue, setRangeValue] = useState(30);
+  // const [rangeValue, setRangeValue] = useState(30);
+  const [activeFilter, setActiveFilter] = useState(""); // État pour le filtre actif
 
   return (
     <div>
-      <Filter
-        searchQuery={searchQuery}
-        rangeValue={rangeValue}
-        setRangeValue={setRangeValue}
-        setSearchQuery={setSearchQuery}
+      <ButtonsFilter
+        setActiveFilter={setActiveFilter}
+        activeFilter={activeFilter} // Passer le filtre actif pour l'état du bouton
       />
-      <PhotoGallery searchQuery={searchQuery} rangeValue={rangeValue} />
+      <PhotoGallery activeFilter={activeFilter} />
       <Footer />
     </div>
   );

@@ -36,12 +36,13 @@ a:hover{
   text-decoration: none;
 }
 
+
 .navbar-nav {
   width: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 0; /* Supprime la marge interne par défaut des ul */
-  list-style: none; /* Supprime les puces de la liste */
+  padding: 0; 
+  list-style: none; 
   margin: 2rem 0;
 }
 
@@ -51,17 +52,26 @@ a:hover{
 
 .nav-link{
   font-size: 1.4rem;
+  color: var(--color-4);
+}
+
+.nav-link:hover{
+  color: var(--color-5);
+}
+
+.nav-link:active, .nav-link:focus{
+  color: var(--color-4);
 }
 
 .nav-active {
-  position: relative;
+  position: relative; 
 }
 
 .nav-active::after {
   content: "";
   height: 2px;
   width: 0;
-  background: var(--color-4); /* Remplacez cela par votre couleur préférée */
+  background: var(--color-4); 
   position: absolute;
   border-radius: 10px;
   bottom: 0px;

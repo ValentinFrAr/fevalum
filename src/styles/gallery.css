@@ -1,4 +1,4 @@
-.photos-content{
+/* .photos-content{
   width: 90%;
   margin: 3rem auto;
   display: flex;
@@ -10,5 +10,132 @@
 .card{
   height: 25rem;
   width: 100%;
-  margin-bottom: 1.5rem;
+}
+
+.card-body{
+  background-color: var(--color-3);
+}
+
+.span-card-text{
+  color: var(--color-1);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.card-text{
+  color: var(--color-5);
+}
+
+@media screen and (min-width: 768px) {
+  .photos-content{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 45%;
+    margin: 5px;
+  }
+
+  
+} */
+
+.photos-content{
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.card{
+  margin: 2rem auto;
+  -webkit-box-shadow: 0px 0px 5px 2px var(--color-2);
+-moz-box-shadow: 0px 0px 5px 2px var(--color-2);
+box-shadow: 0px 0px 5px 2px var(--color-2);
+}
+
+.card-img{
+  background: linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3), var(--color-5));
+}
+
+/* 
+.card-body{
+  background: linear-gradient(45deg, var(--color-1), var(--color-2), var(--color-3), var(--color-5));
+} */
+
+.card-img img{
+  object-fit: contain;
+  height: 15rem;
+}
+
+.span-card-text{
+  color: var(--color-5);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.card-text{
+  color: var(--color-5);
+}
+
+/********************************************************************
+
+****************************
+
+*********************************************************************/
+
+@media screen and (min-width: 450px) {
+  .card-img img{
+ width: 350px;
+ height: 300px;
+  }
+
+  .card-img{
+    margin: auto;
+text-align: center;
+  }
+}
+
+/********************************************************************
+
+****************************
+
+*********************************************************************/
+
+@media screen and (min-width: 768px) {
+  .photos-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card{
+    width: 350px;
+  }
+
+  .card-img img{
+    width: 300px;
+  }
+
+
+  .card-text{
+    text-overflow: ellipsis!important;
+    white-space: nowrap;
+    max-width:350px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .card-text:hover::after {
+    content: attr(data-fulltext); /* Utilise l'attribut pour montrer le texte complet */
+    position: absolute;
+    background-color: var(--color-1);
+    border: 1px solid var(--color-2);
+    padding: 5px;
+    max-width: 350px;
+    top: -10px;
+    right: 5px;
+    white-space: normal; 
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 }

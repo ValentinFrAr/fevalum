@@ -31,22 +31,24 @@
     display: none;
   }
 
-  .content{
-    margin-bottom: 2rem;
-  }
-
   iframe{
-    width: 280px;
+    width: 300px;
     height: 400px;
   }
-  .title-iframe{
-    padding-top: 6rem;
+  
+  .content{
+    display: none;
   }
+}
 
-  .contact-infos p{
-    font-size: 1.4rem!important;
-    margin: auto;
-    }
+@media screen and ( min-width: 1200px) {
+  iframe{
+    width: 600px;
+    height: 500px;
+  }
+  .iframe{
+    margin-top: 4rem;
+  }
 }
 
 @keyframes contactAnim {
@@ -100,7 +102,7 @@
 .form-content input,
 .form-content textarea {
   background: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   border-bottom: 1px solid var(--color-2);
   border-radius: 5px;
@@ -109,7 +111,7 @@
 @media screen and (min-width: 1200px) {
   .form-content input,
   .form-content textarea {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -176,13 +178,17 @@ input[type=text], input[type=email]{
   .contact-infos {
     height: 200px;
     width: 100%;
-    max-width: 100%;    
-    position: relative;
-    display: block;
+    max-width: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b c"
+      "d d d"
+      "e e f";
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 540px) {
   .contact-infos {
     grid-template-rows: repeat(3, 60px);
     grid-template-columns: repeat(6, 1fr);
@@ -193,6 +199,11 @@ input[type=text], input[type=email]{
   }
 }
 
+@media screen and (max-height: 500px) {
+  .contact-infos {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .contact-infos {
@@ -225,6 +236,12 @@ input[type=text], input[type=email]{
   }
 }
 
+.contact-infos .email,
+.contact-infos .phone {
+  @media screen and (max-height: 640px) {
+    display: none;
+  }
+}
 
 .contact-infos .email .content p,
 .contact-infos .phone .content p {
