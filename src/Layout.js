@@ -20,7 +20,7 @@ const Layout = () => {
           <Route path="/galeria" element={<Gallery />}></Route>
         </Routes>
         <FloatingWhatsApp
-          phoneNumber="+54 11 5126-1970"
+          phoneNumber="+54 11 3905-7104"
           accountName="FEVALUM"
           chatMessage="Hola, decíme cómo puedo ayudarte!"
           placeholder="Hola, me gustaría..."
@@ -28,7 +28,7 @@ const Layout = () => {
           statusMessage="Responde en menos de 20 minutos"
           darkMode={false}
           buttonStyle={{ position: "fixed", bottom: "5rem", right: "20px" }}
-          avatar="https://imgs.search.brave.com/8_RnHAeG_pG-VaVVzjzMCYWXPNPs6Jmvqs2ONQN9PM8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE2/OTE0OTU1OC9lcy92/ZWN0b3IvaWNvbm8t/ZGUtdmVudGFuYS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ZjRkeG82Z2V2blkz/YmZFc21PMW45dzZW/VWVFdTRfX1ViS1Q3/TnNUUW56WT0"
+          avatar="https://i.ibb.co/KXCH3c3/FEVALUM-new.jpg"
         />
         <ArrowToTop />
       </div>

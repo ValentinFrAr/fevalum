@@ -114,6 +114,11 @@ text-align: center;
 
   .card-img img{
     width: 300px;
+    transition: .4s all;
+  }
+
+  .card-img img:hover{
+    transform: scale(140%);
   }
 
 

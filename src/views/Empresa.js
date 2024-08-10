@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 const Empresa = () => {
   return (
     <>
-      <main>
-        <h1>FEVALUM - Compromiso y Reglas</h1>
+      <main className="main-empresa">
+        <h1>
+          <span className="span-fev">FEVALUM</span> - Compromiso y Reglas
+        </h1>
 
         <p>
           FEVALUM, empresa líder con dos décadas de experiencia en el sector de
@@ -63,7 +65,9 @@ const Empresa = () => {
           los más altos estándares en cada aspecto de nuestro trabajo.
         </p>
 
-        <footer>Con estima, El equipo de FEVALUM</footer>
+        <footer>
+          Con estima, <br /> El equipo de FEVALUM
+        </footer>
       </main>
       <Footer />
     </>

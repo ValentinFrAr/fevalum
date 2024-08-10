@@ -1,0 +1,14 @@
+.main-empresa{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 1024px){
+  .main-empresa{
+    padding: 2rem;
+  }
+}

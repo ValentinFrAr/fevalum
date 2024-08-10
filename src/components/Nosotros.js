@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Nosotros = () => {
   let navigate = useNavigate();
   return (
-    <div className="nosotros" id="nosotros">
+    <section className="nosotros" id="nosotros">
       <div className="div-title-nosotros">
         <h2 className="title-nosotros">Nosotros</h2>
       </div>
@@ -40,7 +40,7 @@ const Nosotros = () => {
           </div>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
