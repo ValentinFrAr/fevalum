@@ -38,7 +38,7 @@ const Carousel = () => {
             className="d-block w-100 img-carousel"
           />
         </div>
-        <div className="carousel-item" data-bs-interval="50000">
+        <div className="carousel-item" data-bs-interval="5000">
           <div className="d-flex carousel-pub">
             <h4 className="fevalum-pub">
               <span>¡Oferta!</span> <br /> Ventanas 120x100
