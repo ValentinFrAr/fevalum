@@ -41,7 +41,7 @@ const Productos = () => {
               src={photo.img}
               alt={photo.infos}
             />
-            <p>{photo.infos}</p>
+            <p data-fulltext={photo.infos}>{photo.infos}</p>
           </div>
         ))}
       </div>
