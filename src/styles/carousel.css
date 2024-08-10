@@ -1,6 +1,6 @@
 .main-carousel{
   width: 90%;
-  margin: auto;
+  margin: 3rem auto 0;
   -webkit-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.75);
@@ -10,7 +10,7 @@
 
 .img-carousel{
   width: 90%;
-  height: 20rem;
+  height: 13rem;
 }
 
 .carousel-pub{
@@ -34,7 +34,7 @@
 }
 
 .img-carousel-pub{
-  height: 20rem;
+  height: 13rem;
   margin: auto;
   text-align: center;
 }
@@ -44,13 +44,13 @@
 .slogan{
   font-size: 1.3rem;
   color: #fff;
+  display: none;
 }
 
 @media  screen and (min-width: 768px) {
  .fevalum-pub{
   font-size: 3rem;
   padding: 20px;
-
  }
 
  .fevalum-pub, .img-carousel-pub, .second-img-carousel{
@@ -70,6 +70,7 @@
  .slogan{
   font-size: 2.6rem;
   padding: 10px;
+  display: block;
  }
 
 }

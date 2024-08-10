@@ -41,7 +41,7 @@ const Carousel = () => {
         <div className="carousel-item" data-bs-interval="5000">
           <div className="d-flex carousel-pub">
             <h4 className="fevalum-pub">
-              <span>¡Oferta!</span> <br /> Ventanas 120x100
+              <span>¡Oferta!</span> <br /> Ventanas 120x110
             </h4>
 
             <img
